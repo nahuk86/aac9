@@ -1,0 +1,15 @@
+body, html {
+    height: 120%;
+    overflow: auto;
+}
+
+
+@media (min-width: 768px) {
+    .input-group {
+        display: flex;
+        justify-content: space-between;
+    }
+    .input-group .form-group {
+        width: 48%;
+    }
+}

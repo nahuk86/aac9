@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Formulario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form id="myForm">
+                    <div class="input-group">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                            <div class="invalid-feedback">Debe contener al menos 6 caracteres y un espacio.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Debe ser un email válido.</div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" class="form-control" id="password" required>
+                            <div class="invalid-feedback">Debe contener al menos 8 caracteres, incluyendo números y letras.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password-repeat">Repetir Contraseña</label>
+                            <input type="password" class="form-control" id="password-repeat" required>
+                            <div class="invalid-feedback">Las contraseñas deben coincidir.</div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="form-group">
+                            <label for="edad">Edad</label>
+                            <input type="number" class="form-control" id="edad" required>
+                            <div class="invalid-feedback">Debe ser mayor o igual a 18.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" required>
+                            <div class="invalid-feedback">Debe contener al menos 7 dígitos sin espacios, guiones o paréntesis.</div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="form-group">
+                            <label for="direccion">Dirección</label>
+                            <input type="text" class="form-control" id="direccion" required>
+                            <div class="invalid-feedback">Debe contener al menos 5 caracteres y un espacio.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" class="form-control" id="ciudad" required>
+                            <div class="invalid-feedback">Debe contener al menos 3 caracteres.</div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="form-group">
+                            <label for="postal">Código Postal</label>
+                            <input type="text" class="form-control" id="postal" required>
+                            <div class="invalid-feedback">Debe contener al menos 3 caracteres.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="dni">DNI</label>
+                            <input type="number" class="form-control" id="dni" required>
+                            <div class="invalid-feedback">Debe ser un número de 7 u 8 dígitos.</div>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="Assets/script.js"></script>
+</body>
+</html>
